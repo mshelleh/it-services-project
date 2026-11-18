@@ -3,67 +3,170 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="IT support and technology services for your organization.">
-  <title>IT Services Project</title>
+  <meta name="description" content="Website creation and support, smart-home setup, small-business IT, and custom CRM systems.">
+  <meta name="theme-color" content="#090f1d">
+  <title>Your Brand | IT, websites &amp; CRM systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="brand" href="#home">IT Services Project</a>
-    <nav aria-label="Main navigation">
+    <a class="brand" href="#home" aria-label="Your Brand home">YOUR <span>BRAND</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="primary-navigation" aria-label="Main navigation">
       <a href="#services">Services</a>
+      <a href="#approach">How we work</a>
       <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a class="nav-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
 
-  <main>
+  <main id="main">
     <section class="hero" id="home">
-      <div class="hero-content">
-        <p class="eyebrow">Technology, made simpler</p>
-        <h1>Reliable IT support for the way you work.</h1>
-        <p>Use this starter page to introduce your services, your team, and how you help customers.</p>
-        <a class="button" href="#services">Explore services</a>
+      <div class="hero-wash" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">IT services for small businesses and homes</p>
+          <h1>Tech that<br>works for <span class="accent-text">you.</span></h1>
+          <p class="hero-description">We build and support websites, set up computers and smart homes, and create complete CRM systems for small businesses. Practical help from first setup to what comes next.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#services">Explore our services <span aria-hidden="true">↗</span></a>
+            <a class="quiet-link" href="#approach">How we work <span aria-hidden="true">↓</span></a>
+          </div>
+          <p class="hero-note">Straight answers, useful technology, and support that sticks around.</p>
+        </div>
+
+        <figure class="expertise-visual">
+          <div class="visual-heading">
+            <span>One partner for your tech</span>
+          </div>
+          <div class="service-map">
+            <svg class="map-lines" viewBox="0 0 440 330" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M220 165 92 72M220 165 348 72M220 165 92 258M220 165 348 258"/>
+            </svg>
+            <div class="map-center"><span>YOUR</span><strong>TECH</strong></div>
+            <a class="map-node node-web" href="#websites">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 8h18M7 6h.01M10 6h.01" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              <span><strong>Websites</strong><small>Build &amp; support</small></span>
+            </a>
+            <a class="map-node node-home" href="#smart-home">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-6v-7h-4v7H4a1 1 0 0 1-1-1V10Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+              <span><strong>Smart home</strong><small>Device setup</small></span>
+            </a>
+            <a class="map-node node-it" href="#business-it">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 21h8m-4-4v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              <span><strong>Business IT</strong><small>Computers &amp; printers</small></span>
+            </a>
+            <a class="map-node node-crm" href="#crm">
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="3" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="7" r="3" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="17" r="3" stroke="currentColor" stroke-width="1.6"/><path d="m9 9 2 5m4-5-2 5" stroke="currentColor" stroke-width="1.6"/></svg>
+              <span><strong>Custom CRM</strong><small>Systems for your team</small></span>
+            </a>
+          </div>
+          <figcaption>From everyday device setup to systems shaped around your business.</figcaption>
+        </figure>
       </div>
+      <a class="scroll-cue" href="#services"><span aria-hidden="true">↓</span> Take a closer look</a>
     </section>
 
-    <section class="section" id="services">
-      <p class="eyebrow">What we do</p>
-      <h2>IT services that keep you moving</h2>
+    <section class="services section-wrap" id="services">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">What we do</p>
+          <h2>Technology that fits<br>the way you work.</h2>
+        </div>
+        <p>From one device that needs setting up to a complete system built for your business, get the right kind of help for the job.</p>
+      </div>
+
       <div class="service-grid">
-        <article class="card">
-          <h3>IT Support</h3>
-          <p>Describe the day-to-day technical support you provide.</p>
+        <article class="service-card glass" id="websites">
+          <div class="service-card-top">
+            <svg class="service-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 8h18m-14-2h.01M10 6h.01" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <span class="service-type">WEB &amp; SUPPORT</span>
+          </div>
+          <h3>Websites</h3>
+          <p>Get a polished site built for your business, then keep it current with updates and ongoing support.</p>
+          <a href="#contact">Ask about website help <span aria-hidden="true">↗</span></a>
         </article>
-        <article class="card">
-          <h3>Setup &amp; Installation</h3>
-          <p>Highlight device setup, software deployment, or onboarding.</p>
+        <article class="service-card glass" id="smart-home">
+          <div class="service-card-top">
+            <svg class="service-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-6v-7h-4v7H4a1 1 0 0 1-1-1V10Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            <span class="service-type">SMART HOME</span>
+          </div>
+          <h3>Setup that feels simple.</h3>
+          <p>Get smart devices connected, configured, and working together—with help when something stops cooperating.</p>
+          <a href="#contact">Ask about home setup <span aria-hidden="true">↗</span></a>
         </article>
-        <article class="card">
-          <h3>Networks &amp; Security</h3>
-          <p>Explain how you help customers build and maintain dependable systems.</p>
+        <article class="service-card glass" id="business-it">
+          <div class="service-card-top">
+            <svg class="service-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M8 21h8m-4-4v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            <span class="service-type">SMALL BUSINESS IT</span>
+          </div>
+          <h3>Help that keeps you working.</h3>
+          <p>Get computers and printers set up, connected, and supported—plus practical help with everyday business IT.</p>
+          <a href="#contact">Ask about IT support <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="service-card glass" id="crm">
+          <div class="service-card-top">
+            <svg class="service-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="3" stroke="currentColor" stroke-width="1.6"/><circle cx="17" cy="7" r="3" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="17" r="3" stroke="currentColor" stroke-width="1.6"/><path d="m9 9 2 5m4-5-2 5" stroke="currentColor" stroke-width="1.6"/></svg>
+            <span class="service-type">CUSTOM SYSTEMS</span>
+          </div>
+          <h3>A CRM built around you.</h3>
+          <p>Plan and build a complete customer-management system around how your business tracks customers, work, and follow-up.</p>
+          <a href="#contact">Ask about a custom CRM <span aria-hidden="true">↗</span></a>
         </article>
       </div>
     </section>
 
-    <section class="section about" id="about">
-      <p class="eyebrow">About us</p>
-      <h2>Practical technology. Personal service.</h2>
-      <p>Replace this text with a short introduction to your business, who you serve, and what makes your approach different.</p>
+    <section class="approach" id="approach">
+      <div class="approach-inner section-wrap">
+        <div class="approach-copy">
+          <p class="eyebrow">How we work</p>
+          <h2>Good support starts with listening.</h2>
+          <p>We learn what you need, explain the options clearly, and handle the setup so you can get on with your day.</p>
+          <a class="quiet-link" href="#contact">Start with a conversation <span aria-hidden="true">↗</span></a>
+        </div>
+        <ol class="steps">
+          <li><span class="step-number">01</span><div><h3>Tell us what’s going on</h3><p>We’ll get a clear picture of your setup and what you want to do.</p></div></li>
+          <li><span class="step-number">02</span><div><h3>Make a plan that fits</h3><p>We’ll recommend a practical next step without the technical runaround.</p></div></li>
+          <li><span class="step-number">03</span><div><h3>Get it working</h3><p>We’ll help with setup and show you how to use what’s in place.</p></div></li>
+        </ol>
+      </div>
     </section>
 
-    <section class="section contact" id="contact">
-      <p class="eyebrow">Get in touch</p>
-      <h2>Let’s talk about your IT needs.</h2>
-      <p>Add your preferred contact details here before publishing.</p>
+    <section class="about section-wrap" id="about">
+      <p class="eyebrow">A little about us</p>
+      <div class="about-content">
+        <h2>Capable tech help.<br><span class="muted-heading">Without making it complicated.</span></h2>
+        <p>We work with small businesses and households on the technology they rely on every day. Whether it’s a new website, a printer setup, or a full CRM system, we make the work clear and keep the focus on what you actually need.</p>
+      </div>
+    </section>
+
+    <section class="contact section-wrap" id="contact">
+      <div class="contact-panel glass">
+        <div>
+          <p class="eyebrow">Have a project in mind?</p>
+          <h2>Let’s get your tech<br>working better.</h2>
+        </div>
+        <div class="contact-copy">
+          <p>Tell us what you’re trying to get done. We’ll add the business contact details here once they’re ready.</p>
+          <p class="contact-placeholder"><span class="status-dot" aria-hidden="true"></span> Contact details coming soon</p>
+        </div>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span id="year"></span> IT Services Project</p>
+    <div class="footer-inner section-wrap">
+      <a class="brand" href="#home">YOUR <span>BRAND</span></a>
+      <p>Practical IT for business and home.</p>
+      <div><span>© <span id="year"></span> Your Brand</span><a href="#home">Back to top ↑</a></div>
+    </div>
   </footer>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>

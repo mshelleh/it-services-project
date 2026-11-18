@@ -7,7 +7,7 @@ A responsive, static website for a small IT services business. The business name
 - Replace the `YOUR BRAND` / `Your Brand` placeholder in `index.html` and add real contact details when they are ready.
 - Edit `index.html` to update service descriptions and business details.
 - Update `assets/css/styles.css` to change the colors, layout, and typography.
-- Update `assets/js/script.js` for the responsive navigation or reveal behavior.
+- Update `assets/js/script.js` for the responsive navigation and Explore services scrolling behavior.
 - No build tools or package installation are required.
 
 ## Publish with GitHub Pages

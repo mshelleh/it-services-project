@@ -1,13 +1,13 @@
-# CoreBridge Technologies | IT Services
+# Two Men and a Computer | IT Services
 
-A responsive, static website for CoreBridge Technologies, an IT services business. The brand is currently represented by a text wordmark; no logo asset is required.
+A responsive, static website for Two Men and a Computer, an IT services business. The brand is currently represented by a text wordmark; no logo asset is required.
 
 ## Customize the site
 
-- Add real contact details to `index.html` when they are ready.
+- Connect the quote form in `index.html` to a form endpoint before accepting submissions; its submit button is currently disabled.
 - Edit `index.html` to update service descriptions and business details.
 - Update `assets/css/styles.css` to change the colors, layout, and typography.
-- Update `assets/js/script.js` for the responsive navigation and Explore services scrolling behavior.
+- Update `assets/js/script.js` for the responsive navigation, Explore services scrolling, and three-step quote form.
 - No build tools or package installation are required.
 
 ## Publish with GitHub Pages

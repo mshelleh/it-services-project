@@ -88,3 +88,70 @@ if (servicesButton && servicesSection) {
     animationFrame = requestAnimationFrame(animateScroll);
   });
 }
+
+const quoteForm = document.getElementById("quote-form");
+if (quoteForm instanceof HTMLFormElement) {
+  const steps = Array.from(quoteForm.querySelectorAll(".quote-step"));
+  const previousButton = quoteForm.querySelector("[data-previous]");
+  const nextButton = quoteForm.querySelector("[data-next]");
+  const submitButton = quoteForm.querySelector('button[type="submit"]');
+  const progressBar = quoteForm.querySelector(".progress-track");
+  const progressFill = quoteForm.querySelector("[data-progress-fill]");
+  const progressLabel = quoteForm.querySelector("[data-progress-label]");
+  const formMessage = quoteForm.querySelector(".form-message");
+
+  if (
+    steps.length === 0 ||
+    !(previousButton instanceof HTMLButtonElement) ||
+    !(nextButton instanceof HTMLButtonElement) ||
+    !(submitButton instanceof HTMLButtonElement) ||
+    !(progressBar instanceof HTMLElement) ||
+    !(progressFill instanceof HTMLElement) ||
+    !(progressLabel instanceof HTMLElement) ||
+    !(formMessage instanceof HTMLElement)
+  ) {
+    throw new Error("The quote form is missing required controls.");
+  }
+
+  let currentStep = 0;
+  const showStep = (focus = false) => {
+    steps.forEach((step, index) => {
+      step.hidden = index !== currentStep;
+    });
+    previousButton.hidden = currentStep === 0;
+    nextButton.hidden = currentStep === steps.length - 1;
+    submitButton.hidden = currentStep !== steps.length - 1;
+    progressBar.setAttribute("aria-valuenow", String(currentStep + 1));
+    progressFill.style.width = `${((currentStep + 1) / steps.length) * 100}%`;
+    progressLabel.textContent = `Step ${currentStep + 1} of ${steps.length}`;
+    formMessage.textContent = "";
+
+    if (focus) {
+      steps[currentStep].querySelector("legend")?.focus();
+    }
+  };
+
+  nextButton.addEventListener("click", () => {
+    const invalidControl = Array.from(
+      steps[currentStep].querySelectorAll("input, textarea, select")
+    ).find((control) => !control.checkValidity());
+
+    if (invalidControl) {
+      invalidControl.reportValidity();
+      return;
+    }
+
+    currentStep += 1;
+    showStep(true);
+  });
+
+  previousButton.addEventListener("click", () => {
+    currentStep -= 1;
+    showStep(true);
+  });
+
+  quoteForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    formMessage.textContent = "Online form delivery is not connected yet. Your request was not sent.";
+  });
+}

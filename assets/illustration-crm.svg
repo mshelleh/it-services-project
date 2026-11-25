@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 190">
+  <rect width="360" height="190" fill="#e5f1ee"/>
+  <circle cx="309" cy="33" r="64" fill="#f4e5b9"/>
+  <rect x="53" y="28" width="254" height="135" rx="10" fill="#103f46"/>
+  <rect x="63" y="38" width="234" height="115" rx="5" fill="#fff"/>
+  <rect x="75" y="50" width="49" height="91" rx="5" fill="#e8f3f0"/>
+  <circle cx="99" cy="68" r="8" fill="#278682"/>
+  <rect x="84" y="83" width="31" height="4" rx="2" fill="#9db7b2"/>
+  <rect x="84" y="94" width="26" height="4" rx="2" fill="#c4d6d2"/>
+  <rect x="84" y="111" width="28" height="7" rx="3" fill="#e9b64d"/>
+  <rect x="84" y="125" width="22" height="4" rx="2" fill="#c4d6d2"/>
+  <rect x="136" y="50" width="147" height="36" rx="5" fill="#f5f8f6"/>
+  <rect x="147" y="61" width="56" height="5" rx="2" fill="#278682"/>
+  <rect x="147" y="72" width="95" height="4" rx="2" fill="#c4d6d2"/>
+  <rect x="136" y="94" width="147" height="47" rx="5" fill="#f5f8f6"/>
+  <path d="M150 129v-10h12v10M170 129v-21h12v21M190 129v-15h12v15M210 129V101h12v28" fill="#278682"/>
+  <path d="M150 132h72" stroke="#103f46" stroke-linecap="round" stroke-width="3"/>
+  <circle cx="252" cy="113" r="13" fill="#e9b64d"/>
+  <circle cx="252" cy="113" r="5" fill="#fff"/>
+</svg>

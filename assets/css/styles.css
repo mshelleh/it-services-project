@@ -35,7 +35,7 @@ h1, h2, h3 { line-height: 1.2; }
 .topline b { padding-inline: .35rem; color: var(--gold); }
 .site-header { position: sticky; z-index: 10; top: 0; display: flex; min-height: 78px; align-items: center; justify-content: space-between; padding-inline: max(1.5rem, calc((100% - 1080px) / 2)); border-bottom: 1px solid var(--line); background: var(--white); }
 .brand { display: inline-flex; align-items: center; gap: .55rem; color: var(--ink); text-decoration: none; }
-.brand-mark { display: grid; width: 42px; height: 42px; place-items: center; border-radius: 50%; color: var(--ink); background: var(--gold); font-size: 1.45rem; font-weight: 850; }
+.brand-mark { display: block; width: 42px; height: 42px; flex: 0 0 auto; }
 .brand-name { display: grid; font-size: 1.02rem; font-weight: 800; letter-spacing: -.035em; line-height: 1.05; }
 .brand-name small { margin-top: .18rem; color: var(--muted); font-size: .67rem; font-weight: 600; letter-spacing: .01em; }
 .site-nav { display: flex; align-items: center; gap: 1.8rem; }
